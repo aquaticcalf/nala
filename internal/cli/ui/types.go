@@ -7,8 +7,8 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	"github.com/charmbracelet/lipgloss"
 
-	"go.nirbar.in/nala/internal/db"
-	"go.nirbar.in/nala/internal/tools"
+	"go.nirbar.in/nala/internal/cli/db"
+	"go.nirbar.in/nala/internal/cli/tools"
 )
 
 type errMsg error

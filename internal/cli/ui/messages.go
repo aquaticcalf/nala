@@ -5,12 +5,12 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"go.nirbar.in/nala/internal/db"
+	"go.nirbar.in/nala/internal/cli/db"
 )
 
 func updateMessages(m *model) {
 	if len(m.messages) == 0 {
-		welcomeMsg := m.nalaLabelStyle.Render("nala") + " " + "hello! i'm Nala and i love to chat"
+		welcomeMsg := m.nalaLabelStyle.Render("nala") + " " + "hello! i'm nala and i love to chat"
 		m.messages = append(m.messages, welcomeMsg)
 	}
 

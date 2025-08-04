@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"go.nirbar.in/nala/internal/db"
-	"go.nirbar.in/nala/internal/tools"
+	"go.nirbar.in/nala/internal/cli/db"
+	"go.nirbar.in/nala/internal/cli/tools"
 )
 
 func initTools() map[string]tools.Tool {

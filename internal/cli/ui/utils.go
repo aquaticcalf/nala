@@ -2,7 +2,7 @@ package ui
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
-	"go.nirbar.in/nala/internal/tools"
+	"go.nirbar.in/nala/internal/cli/tools"
 )
 
 const gap = "\n\n"

@@ -8,7 +8,7 @@ import (
 	"github.com/charmbracelet/bubbles/textarea"
 	"github.com/charmbracelet/bubbles/viewport"
 	"github.com/charmbracelet/lipgloss"
-	"go.nirbar.in/nala/internal/db"
+	"go.nirbar.in/nala/internal/cli/db"
 	"golang.org/x/term"
 )
 
@@ -57,7 +57,7 @@ func initViewport(termWidth, termHeight, textareaHeight int) viewport.Model {
 }
 
 func setupInitialContent(vp *viewport.Model, nalaLabelStyle, badgeStyle lipgloss.Style, termWidth int, session *db.Session) []string {
-	welcomeMsg := nalaLabelStyle.Render("nala") + " " + "hello! i'm Nala and i love to chat"
+	welcomeMsg := nalaLabelStyle.Render("nala") + " " + "hello! i'm nala and i love to chat"
 
 	var sessionMsg string
 	if session != nil {
@@ -75,7 +75,7 @@ func setupInitialContent(vp *viewport.Model, nalaLabelStyle, badgeStyle lipgloss
 	if session != nil {
 		dbMessage := &db.Message{
 			Author:    "nala",
-			Content:   "hello! i'm Nala and i love to chat",
+			Content:   "hello! i'm nala and i love to chat",
 			SessionID: session.ID,
 		}
 		db.CreateMessage(dbMessage)

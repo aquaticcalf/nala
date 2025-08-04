@@ -9,7 +9,7 @@ import (
 	"github.com/charmbracelet/bubbles/textarea"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"go.nirbar.in/nala/internal/db"
+	"go.nirbar.in/nala/internal/cli/db"
 )
 
 type scrollMsg struct {
