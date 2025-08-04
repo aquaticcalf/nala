@@ -6,3 +6,5 @@ build:
 install: build
 :	sudo install -Dm755 ./bin/nala /usr/local/bin/nala
 
+api:
+:	go build -o ./bin/api ./cmd/api
