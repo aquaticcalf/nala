@@ -1,0 +1,20 @@
+{
+  "name": "nala",
+  "private": true,
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "fix": "oxfmt && oxlint --fix && tsc --noEmit",
+    "workspaces": [
+      "ui"
+    ]
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
