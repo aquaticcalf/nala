@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "module": "index.ts",
+  "dependencies": {
+    "expo": "^54.0.33",
+    "react": "^19.2.4",
+    "react-native": "^0.83.1"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
