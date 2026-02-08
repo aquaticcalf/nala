@@ -11,7 +11,7 @@
   "type": "module",
   "module": "index.ts",
   "scripts": {
-    "fix": "oxfmt -c config/oxfmt.json && oxlint -c config/oxlint.json --fix && tsc --noEmit"
+    "fix": "echo \"\" && oxfmt -c config/oxfmt.json && oxlint -c config/oxlint.json --fix && echo \"\" && for dir in ai desktop mobile pages ui; do (cd \"$dir\" && bun tsc --noEmit && echo -e \"\\033[1;3m$dir\\033[0m tsc cool\"); done && echo \"\""
   },
   "devDependencies": {
     "@types/bun": "latest",
