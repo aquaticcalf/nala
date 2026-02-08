@@ -4,7 +4,8 @@
   "type": "module",
   "module": "index.ts",
   "dependencies": {
-    "react": "^19.2.4"
+    "react": "^19.2.4",
+    "ui": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "latest"
