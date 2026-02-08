@@ -1,1 +1,3 @@
-console.log("ui")
+export * from "@/components"
+export * from "@/lib"
+export * from "@/tokens"

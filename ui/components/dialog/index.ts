@@ -1,0 +1,18 @@
+export {
+  Dialog,
+  DialogTrigger,
+  DialogPortal,
+  DialogBackdrop,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+  DialogClose,
+  type DialogProps,
+  type DialogTriggerProps,
+  type DialogPortalProps,
+  type DialogBackdropProps,
+  type DialogContentProps,
+  type DialogTitleProps,
+  type DialogDescriptionProps,
+  type DialogCloseProps,
+} from "./dialog.tsx"
